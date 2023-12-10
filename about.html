@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }          
+        body{
+	        width: 100%;
+            height: 90vh;
+            justify-content: space-around;
+            align-items: center;
+            background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(307811938_641207880695615_7492579526338523026_n.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .main{
+            display: flex;
+        }
+        .menu{
+            margin: 0%;
+            height: 80px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            color: #000;
+            padding-left: 650px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 12px;
+            letter-spacing: 2px;
+            font-size: 25px;
+        }
+        .menu a:hover{
+            border-bottom: 4px solid #000;
+            transition: 0.4s;
+            color: red;
+        }
+        .pictures{
+            position: relative;
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .pictures .picture{
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background-color: white;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 202px rgba(0,0,0,0.50);
+            transition: 0.3s ease-in-out;
+        }
+        .pictures .picture:hover{
+            height: 420px;
+            background-color: blue;
+        }
+        .pictures .picture .imgx{
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 20px;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.50);
+        }
+        .pictures .picture .imgx img{
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .pictures .picture .ambag{
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: white;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .pictures .picture:hover .ambag{
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h4><a href="index.html">Home</a></h4>
+        <h4><a href="about.html">About</a></h4>
+    </div>
+<div class="main">  
+    <div class="pictures">
+        <div class="picture">
+            <div class="imgx">
+                <img src="img/368560865_683062686587729_4386478958676445570_n copy.jpg" alt="img">
+            </div>
+            <div class="ambag">
+                <h1>Micko Comia</h1>
+                <ul>
+                <h2><li>HOME PAGE</li>
+                    <li>ABOUT PAGE</li>
+                    <li>FIRST TOPIC</li>
+                    <li>HTML</li>
+                    <li>CSS</li></h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pictures">
+        <div class="picture">
+            <div class="imgx">
+                <img src="img/385533419_876619473923413_5441179609793180562_n.jpg" alt="img">
+            </div>
+            <div class="ambag">
+                <h1>Janna Baluyot</h1><br>
+                <ul>
+                <h2><li>SECOND TOPIC</li>
+                    <li>HTML</li>
+                    <li>CSS</li></h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="pictures">
+        <div class="picture">
+            <div class="imgx">
+                <img src="img/407210309_1117382045898598_4544291329975371745_n.jpg" alt="img">
+            </div>
+            <div class="ambag">
+                <h1>Jaeson Dalangin</h1><br>
+                <ul>
+                    <h2><li>THIRD TOPIC</li>
+                    <li>HTML</li>
+                    <li>CSS</li></h2>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
